@@ -6,6 +6,7 @@ public class HUD : MonoBehaviour
 {
     Label scoreLabel, timerLabel;
     private InputSystem_Actions input;
+    [SerializeField] InputActionReference actionReference;
 
     private void Update()
     {
@@ -23,11 +24,17 @@ public class HUD : MonoBehaviour
         SetScore(0);
         SetTime(30);
 
-        input = new InputSystem_Actions();
+        //input = new InputSystem_Actions();
 
-        input.Player.Enable();
+        //input.Player.Enable();
 
-        input.Player.FeedAnimal.performed += OnFeedAnimal;
+        //input.Player.FeedAnimal.performed += OnFeedAnimal;
+
+        if (actionReference != null)
+        {
+            actionReference.action.performed += OnFeedAnimal;
+            actionReference.action.Enable();
+        }
 
     }
 
@@ -51,8 +58,14 @@ public class HUD : MonoBehaviour
     private void OnDisable()
     {
 
-        input.Player.FeedAnimal.performed -= OnFeedAnimal;
-        input.Player.Disable();
+        //input.Player.FeedAnimal.performed -= OnFeedAnimal;
+        //input.Player.Disable();
+
+        if (actionReference != null)
+        {
+            actionReference.action.performed -= OnFeedAnimal;
+            actionReference.action.Disable();
+        }
 
     }
 
