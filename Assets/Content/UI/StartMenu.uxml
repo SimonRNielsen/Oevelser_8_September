@@ -1,0 +1,7 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Content/UI/StyleSheet.uss?fileID=7433441132597879392&amp;guid=a86da23d4790a0049825cac885dd46ec&amp;type=3#StyleSheet" />
+    <ui:VisualElement name="Panel" style="flex-grow: 1; background-color: rgb(65, 105, 225);">
+        <ui:Label text="Feed The Animal" name="Label" style="-unity-text-align: upper-center; color: rgb(255, 255, 255);" />
+        <ui:Button text="Start Game" name="StartButton" enable-rich-text="true" style="-unity-text-align: middle-center; background-color: rgb(255, 235, 4);" />
+    </ui:VisualElement>
+</ui:UXML>

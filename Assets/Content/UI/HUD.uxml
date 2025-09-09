@@ -1,0 +1,6 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Content/UI/HUDStyleSheet.uss?fileID=7433441132597879392&amp;guid=7bb9ae80422ea57489404c46cb8c4e99&amp;type=3#HUDStyleSheet" />
+    <ui:VisualElement name="Panel" style="flex-grow: 1;" />
+    <ui:Label text="Label" name="ScoreLabel" />
+    <ui:Label text="Label" name="TimerLabel" />
+</ui:UXML>
